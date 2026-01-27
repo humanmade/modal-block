@@ -9,16 +9,27 @@ document.addEventListener( 'DOMContentLoaded', function () {
 	const modals = document.querySelectorAll( '.hm-modal-trigger' );
 
 	modals.forEach( ( modalBlock ) => {
-		const trigger = modalBlock.querySelector( '.modal-trigger' );
+		const content = modalBlock.querySelector( '.modal-content' );
 
-		// Skip if this is a placeholder
-		if ( trigger?.closest( '.is-placeholder' ) ) {
+		if ( ! content ) {
 			return;
 		}
 
-		const content = modalBlock.querySelector( '.modal-content' );
+		// Find trigger: either element with .modal-trigger class, or the first child before modal-content
+		let trigger = modalBlock.querySelector( '.modal-trigger' );
+		
+		if ( ! trigger ) {
+			// Get all children before modal-content
+			const children = Array.from( modalBlock.children );
+			const contentIndex = children.indexOf( content );
+			// Use first child as trigger if it exists and comes before content
+			if ( contentIndex > 0 ) {
+				trigger = children[ contentIndex - 1 ];
+			}
+		}
 
-		if ( ! trigger || ! content ) {
+		// Skip if this is a placeholder
+		if ( trigger?.closest( '.is-placeholder' ) || ! trigger ) {
 			return;
 		}
 
