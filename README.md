@@ -23,7 +23,7 @@ This plugin provides a modal component with two blocks:
 3. Activate the plugin in WordPress
 
 ### For Production
-1. Download from the `dist` branch or release
+1. Download a [release bundle](https://github.com/humanmade/hm-modal-block/releases) or clone the `release` branch
 2. Upload to `/wp-content/plugins/hm-modal-block/`
 3. Activate the plugin in WordPress
 
@@ -39,6 +39,8 @@ This plugin provides a modal component with two blocks:
 **Tip:** Add the class `modal-trigger` to your trigger element for explicit targeting, or the first block before Modal Content will automatically become the trigger.
 
 ## Development
+
+If you have [nvm](https://github.com/nvm-sh/nvm) installed you can run `nvm use` in the repository root to activate the correct version of Node.
 
 ### Setup
 ```bash
@@ -60,7 +62,7 @@ npm start
 
 - WordPress 5.8+
 - PHP 7.4+
-- Node.js 20.10+
+- Node.js 24+
 
 ## License
 
