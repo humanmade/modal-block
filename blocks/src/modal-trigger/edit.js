@@ -3,8 +3,10 @@
  */
 import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
 
-const TEMPLATE = [ [ 'hm/modal-content' ] ];
-const ALLOWED_BLOCKS = [ 'hm/modal-content' ];
+const TEMPLATE = [
+	[ 'core/paragraph', { placeholder: 'Add trigger content (button, image, etc.)...', className: 'modal-trigger' } ],
+	[ 'hm/modal-content' ]
+];
 
 export default function Edit() {
 	const blockProps = useBlockProps( {
@@ -13,8 +15,7 @@ export default function Edit() {
 
 	const innerBlocksProps = useInnerBlocksProps( blockProps, {
 		template: TEMPLATE,
-		templateLock: 'all',
-		allowedBlocks: ALLOWED_BLOCKS,
+		templateLock: false,
 	} );
 
 	return <div { ...innerBlocksProps } />;
