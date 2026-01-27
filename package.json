@@ -30,6 +30,6 @@
   },
   "devDependencies": {
     "@humanmade/block-editor-components": "^0.6.1",
-    "@wordpress/scripts": "^26.15.0"
+    "@wordpress/scripts": "^31.3.0"
   }
 }
