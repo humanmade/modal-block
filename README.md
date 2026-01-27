@@ -5,29 +5,38 @@ Simple modal block for the WordPress block editor.
 ## Description
 
 This plugin provides a modal component with two blocks:
-- **Modal Trigger**: Container block that wraps the trigger element and modal content
-- **Modal Content**: The content displayed in the modal overlay
+- **Modal Trigger**: Container block where you add your trigger element (button, image, etc.)
+- **Modal Content**: Renders the modal overlay with your content
 
 ## Features
 
-- Accessible keyboard navigation
-- Focus trapping within modal
-- Auto-pause videos/iframes when closed
-- Customizable trigger and content
-- Works with any inner blocks
+- Accessible keyboard navigation with focus trapping
+- Auto-pause videos/iframes when modal closes
+- Overlay click and Escape key to close
+- Customizable trigger and content using any WordPress blocks
 
 ## Installation
 
-1. Upload the plugin files to `/wp-content/plugins/hm-modal-block/`
-2. Run `npm install && npm run build` to compile the blocks
-3. Activate the plugin through the 'Plugins' screen in WordPress
+### For Development
+1. Clone or download to `/wp-content/plugins/hm-modal-block/`
+2. Run `npm install && npm run build`
+3. Activate the plugin in WordPress
+
+### For Production
+1. Download from the `dist` branch or release
+2. Upload to `/wp-content/plugins/hm-modal-block/`
+3. Activate the plugin in WordPress
 
 ## Usage
 
-1. Add the "Modal Trigger" block to your content
-2. Add your trigger element (button, image, text, etc.) inside the trigger area
-3. Add your modal content inside the "Modal Content" block (automatically added below the trigger)
-4. When clicked, the trigger opens the modal overlay with your content
+1. Add the **Modal Trigger** block to your page
+2. Inside it, you'll see:
+   - A placeholder paragraph (replace this with your trigger: button, image, text, etc.)
+   - A **Modal Content** block (automatically added)
+3. Add your modal content inside the "Modal Content" block
+4. On the front-end, clicking the trigger opens the modal overlay
+
+**Tip:** Add the class `modal-trigger` to your trigger element for explicit targeting, or the first block before Modal Content will automatically become the trigger.
 
 ## Development
 
