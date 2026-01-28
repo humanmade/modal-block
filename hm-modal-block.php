@@ -25,8 +25,8 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-require_once __DIR__ . '/blocks/src/modal-trigger/register.php';
-require_once __DIR__ . '/blocks/src/modal-content/register.php';
+require_once __DIR__ . '/src/blocks/modal-trigger/register.php';
+require_once __DIR__ . '/src/blocks/modal-content/register.php';
 
 // Setup custom blocks.
 Blocks\Modal_Trigger\bootstrap();

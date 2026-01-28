@@ -10,5 +10,5 @@ function bootstrap() {
 }
 
 function register_block() {
-	register_block_type( plugin_dir_path( dirname( __FILE__, 3 ) ) . 'blocks/build/modal-content' );
+	register_block_type( plugin_dir_path( dirname( __FILE__, 3 ) ) . 'build/modal-content' );
 }
