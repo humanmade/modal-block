@@ -1,5 +1,5 @@
 {
-  "name": "hm-modal-block",
+  "name": "modal-block",
   "version": "1.0.0",
   "description": "Simple modal block for the WordPress block editor.",
   "author": "Human Made Limited",
@@ -7,10 +7,10 @@
   "homepage": "https://humanmade.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/humanmade/hm-modal-block.git"
+    "url": "git+https://github.com/humanmade/modal-block.git"
   },
   "bugs": {
-    "url": "https://github.com/humanmade/hm-modal-block/issues"
+    "url": "https://github.com/humanmade/modal-block/issues"
   },
   "scripts": {
     "build": "wp-scripts build --webpack-src-dir=blocks/src --output-path=blocks/build",

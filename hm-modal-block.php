@@ -4,7 +4,7 @@
  **
  * @link              https://humanmade.com
  * @since             1.0.0
- * @package           hm-modal-block
+ * @package           modal-block
  *
  * Plugin Name:       HM Modal Block
  * Plugin URI:        https://humanmade.com
