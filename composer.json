@@ -11,5 +11,13 @@
 	],
 	"require": {
 		"php": ">=8.2"
+	},
+	"require-dev": {
+		"humanmade/coding-standards": "dev-upgrade-wpcs"
+	},
+	"scripts": {
+		"lint": [
+			"phpcs --standard=phpcs.xml.dist"
+		]
 	}
 }
