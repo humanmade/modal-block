@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "hm/modal-trigger",
+	"version": "1.0.0",
+	"title": "Modal Trigger",
+	"category": "design",
+	"icon": "admin-page",
+	"description": "A modal with separate trigger and content areas",
+	"keywords": ["modal", "popup", "lightbox", "dialog", "trigger"],
+	"textdomain": "hm-modal",
+	"attributes": {},
+	"supports": {
+		"align": false,
+		"html": false,
+		"spacing": {
+			"margin": false,
+			"padding": false
+		}
+	},
+	"editorScript": "file:./editor.js",
+	"editorStyle": "file:./editor.css",
+	"style": "file:./style-editor.css",
+	"viewScript": "file:./view.js"
+}

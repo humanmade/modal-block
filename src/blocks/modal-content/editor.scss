@@ -1,0 +1,25 @@
+// Modal content editor styles
+.modal-content {
+	// Override frontend styles in editor
+	opacity: 1 !important;
+	visibility: visible !important;
+	position: relative !important;
+	background: transparent !important;
+
+	.modal-section-label {
+		font-size: 12px;
+		font-weight: 600;
+		color: #1e1e1e;
+		margin-bottom: 8px;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	.modal-body {
+		padding: 20px;
+		border: 2px dashed #ccc;
+		border-radius: 4px;
+		background: #f5f5f5;
+		min-height: 100px;
+	}
+}
