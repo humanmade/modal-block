@@ -25,9 +25,18 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-require_once __DIR__ . '/src/blocks/modal-trigger/register.php';
-require_once __DIR__ . '/src/blocks/modal-content/register.php';
+// Check if build files exist.
+if ( ! is_readable( __DIR__ . '/build/modal-content/block.json' ) ) {
+	trigger_error( 'Build files missing', E_USER_WARNING );
+	return;
+}
 
 // Setup custom blocks.
-Blocks\Modal_Trigger\bootstrap();
-Blocks\Modal_Content\bootstrap();
+add_action( 'init', function() {
+	register_block_type( __DIR__ . '/build/modal-trigger' );
+	register_block_type( __DIR__ . '/build/modal-content' );
+} );
+
+add_action( 'wp_enqueue_scripts', function() {
+	wp_script_add_data( 'hm-modal-trigger-view-script', 'strategy', 'async' );
+} );
