@@ -118,7 +118,11 @@ document.addEventListener( 'DOMContentLoaded', function () {
 			}, 300 );
 		}
 
-		// Trap focus with keyboard (handles tab key)
+		/**
+		 * Trap focus with keyboard (handles tab key)
+		 * 
+		 * @param {KeyboardEvent} e Key down event.
+		 */
 		function trapFocusKeyboard( e ) {
 			if ( e.key !== 'Tab' ) {
 				return;
