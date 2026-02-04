@@ -1,5 +1,5 @@
 {
-	"name": "humanmade/hm-modal-block",
+	"name": "humanmade/modal-block",
 	"description": "Simple modal block for WordPress block editor",
 	"type": "wordpress-plugin",
 	"license": "GPL-2.0-or-later",
@@ -10,11 +10,14 @@
 		}
 	],
 	"require": {
-		"php": ">=7.4"
+		"php": ">=8.2"
 	},
-	"autoload": {
-		"files": [
-			"hm-modal-block.php"
+	"require-dev": {
+		"humanmade/coding-standards": "dev-upgrade-wpcs"
+	},
+	"scripts": {
+		"lint": [
+			"phpcs --standard=phpcs.xml.dist"
 		]
 	}
 }
