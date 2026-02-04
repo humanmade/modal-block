@@ -18,13 +18,13 @@ This plugin provides a modal component with two blocks:
 ## Installation
 
 ### For Development
-1. Clone or download to `/wp-content/plugins/hm-modal-block/`
+1. Clone or download to `/wp-content/plugins/modal-block/`
 2. Run `npm install && npm run build`
 3. Activate the plugin in WordPress
 
 ### For Production
-1. Download a [release bundle](https://github.com/humanmade/hm-modal-block/releases) or clone the `release` branch
-2. Upload to `/wp-content/plugins/hm-modal-block/`
+1. Download a [release bundle](https://github.com/humanmade/modal-block/releases) or clone the `release` branch
+2. Upload to `/wp-content/plugins/modal-block/`
 3. Activate the plugin in WordPress
 
 ## Usage
