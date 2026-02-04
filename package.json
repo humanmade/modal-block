@@ -1,6 +1,6 @@
 {
   "name": "modal-block",
-  "version": "1.0.0",
+  "private": true,
   "description": "Simple modal block for the WordPress block editor.",
   "author": "Human Made Limited",
   "license": "GPL-2.0-or-later",
