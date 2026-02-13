@@ -3,7 +3,6 @@
  * HM Modal Block Plugin.
  **
  * @link              https://humanmade.com
- * @since             1.0.0
  * @package           modal-block
  *
  * Plugin Name:       HM Modal Block
