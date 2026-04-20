@@ -8,7 +8,7 @@
  * Plugin Name:       HM Modal Block
  * Plugin URI:        https://humanmade.com
  * Description:       Simple modal block for WordPress block editor.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Human Made Limited
  * Author URI:        https://humanmade.com/
  * License:           GPL-2.0+

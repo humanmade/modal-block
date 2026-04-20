@@ -7,7 +7,11 @@ Add items to Unreleased as they are developed, then introduce new headings whene
 
 ## Unreleased
 
-## [1.0.0](https://github.com/humanmade/modal-block/releases/tag/v1.0.0) - 2026-02-04
+## [1.0.1](https://github.com/humanmade/modal-block/releases/tag/v1.0.1)
+
+Fix path hierarchy error causing blocks not to load in editor
+
+## [1.0.0](https://github.com/humanmade/modal-block/releases/tag/v1.0.0)
 
 Initial release of HM Modal Block plugin
 
