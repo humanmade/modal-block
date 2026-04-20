@@ -32,8 +32,8 @@ if ( ! is_readable( __DIR__ . '/build/blocks/modal-content/block.json' ) ) {
 
 // Setup custom blocks.
 add_action( 'init', function() {
-	register_block_type( __DIR__ . '/build/blocks/modal-trigger' );
-	register_block_type( __DIR__ . '/build/blocks/modal-content' );
+	register_block_type_from_metadata( __DIR__ . '/build/blocks/modal-trigger' );
+	register_block_type_from_metadata( __DIR__ . '/build/blocks/modal-content' );
 } );
 
 add_action( 'wp_enqueue_scripts', function() {
