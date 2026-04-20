@@ -25,15 +25,15 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // Check if build files exist.
-if ( ! is_readable( __DIR__ . '/build/modal-content/block.json' ) ) {
+if ( ! is_readable( __DIR__ . '/build/blocks/modal-content/block.json' ) ) {
 	trigger_error( 'Build files missing', E_USER_WARNING );
 	return;
 }
 
 // Setup custom blocks.
 add_action( 'init', function() {
-	register_block_type( __DIR__ . '/build/modal-trigger' );
-	register_block_type( __DIR__ . '/build/modal-content' );
+	register_block_type_from_metadata( __DIR__ . '/build/blocks/modal-trigger' );
+	register_block_type_from_metadata( __DIR__ . '/build/blocks/modal-content' );
 } );
 
 add_action( 'wp_enqueue_scripts', function() {
