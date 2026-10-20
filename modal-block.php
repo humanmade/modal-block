@@ -15,6 +15,7 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       hm-modal
  * Domain Path:       /languages
+ * Update URI:        https://github.com/humanmade/modal-block
  */
 
 namespace HM_Modal_Block;
