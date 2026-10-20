@@ -7,8 +7,9 @@ Add items to Unreleased as they are developed, then introduce new headings whene
 
 ## Unreleased
 
-### Fixed
-- Add `Update URI` header so WordPress no longer offers the unrelated `modal-block` plugin from WordPress.org as an update
+## [1.0.2](https://github.com/humanmade/modal-block/releases/tag/v1.0.2)
+
+Add `Update URI` header so WordPress no longer offers the unrelated `modal-block` plugin from WordPress.org as an update candidate
 
 ## [1.0.1](https://github.com/humanmade/modal-block/releases/tag/v1.0.1)
 
