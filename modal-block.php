@@ -38,5 +38,6 @@ add_action( 'init', function() {
 } );
 
 add_action( 'wp_enqueue_scripts', function() {
-	wp_script_add_data( 'hm-modal-trigger-view-script', 'strategy', 'async' );
+	// Use defer instead of async: an async script can run after DOMContentLoaded on slow connections.
+	wp_script_add_data( 'hm-modal-trigger-view-script', 'strategy', 'defer' );
 } );

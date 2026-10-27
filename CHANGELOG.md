@@ -7,6 +7,9 @@ Add items to Unreleased as they are developed, then introduce new headings whene
 
 ## Unreleased
 
+### Fixed
+- Fix modals not opening on slow connections (e.g. on mobile) when the view script runs after `DOMContentLoaded`
+
 ## [1.0.2](https://github.com/humanmade/modal-block/releases/tag/v1.0.2)
 
 Add `Update URI` header so WordPress no longer offers the unrelated `modal-block` plugin from WordPress.org as an update candidate

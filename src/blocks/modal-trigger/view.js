@@ -4,7 +4,8 @@
  * Handles opening/closing modals with keyboard accessibility
  */
 
-document.addEventListener( 'DOMContentLoaded', function () {
+// Initialize all modal blocks on the page
+function initModals() {
 	// Find all modal blocks
 	const modals = document.querySelectorAll( '.hm-modal-trigger' );
 
@@ -202,4 +203,12 @@ document.addEventListener( 'DOMContentLoaded', function () {
 			}
 		} );
 	} );
-} );
+}
+
+// If this script runs after DOMContentLoaded (e.g. on a slow connection), the event never fires again
+// and no modal would open, so initialize right away
+if ( document.readyState === 'loading' ) {
+	document.addEventListener( 'DOMContentLoaded', initModals );
+} else {
+	initModals();
+}
